@@ -16,6 +16,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #f5f8ff;
+}
 
 /* common style */
 .primary-color{
@@ -153,6 +156,80 @@ main{
   gap: 20px;
 }
 
+/* Latest  Deals section */
+.latest-deals-tests{
+  text-align: center;
+}
+.latest-deals-tests p{
+  margin: 16px 126px 49px 126px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 28px;
+}
+.left-column {
+  display: grid;
+  gap: 28px;
+}
+
+.grid-card {
+  border-radius: 14px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-content h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card-content a {
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 19px;
+}
+
+.right-card {
+  grid-row: span 2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  border-radius: 22px;
+  height: 428px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.right-card .card-content a {
+  display: inline-block;
+  font-size: 1.75rem;
+  color: white;
+}
+
 /* responsive-design-for-md-device */
 @media screen and (min-width: 576px) and (max-width:1180px) {
   .navbar{
@@ -240,6 +317,32 @@ main{
   }
   .absolute-img {
     display: none;
+  }
+
+  /* Latest  Deals section */
+  .latest-deals-tests p{
+    margin: 16px 28.5px 51.5px 28.5px;
+  }
+  .grid-card {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .left-column {
+    gap: 20px;
+  }
+  .right-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    height: 200px;
+  }
+  .card-content h2 {
+    font-size: 1.25rem;
+  }
+  .right-card .card-content a {
+    font-size: 1rem;
   }
 
 }
