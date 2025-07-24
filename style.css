@@ -271,6 +271,46 @@ button[type="submit"]{
     padding: 15.5px 53.5px;
 }
 
+/* footer section */
+.footer{
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer-col-1 p{
+  max-width: 359px;
+  margin-top: 16px;
+}
+.footer-col-2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 110.67px;
+}
+.footer-col-2 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+.footer-manu-item a{
+  color: rgba(0, 0, 0, .5);
+  text-decoration: none;
+}
+.footer-col-3{
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.footer-col-3 img{
+  width: 36px;
+  height: 36px;
+}
+
 /* responsive-design-for-md-device */
 @media screen and (min-width: 576px) and (max-width:1180px) {
   .navbar{
@@ -288,11 +328,18 @@ button[type="submit"]{
     margin: 41.5px 0px 143px 0px;
   }
   .flower-store-img{
-    width: 100%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
   }
   .absolute-img {
     display: none;
   }
+
+/* footer */
+.footer{
+  margin: 50px 20px;
+}
 
 }
 
@@ -398,4 +445,29 @@ button[type="submit"]{
     padding: 15.5px 12px;
   }
 
+/* footer */
+.footer{
+  margin: 50px 17px;
+  flex-direction: column;
+}
+.footer-col-1 img{
+  width: 180px;
+}
+.footer-col-2{
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer-col-2 ul{
+  gap: 32px;
+}
+.footer-manu-item a{
+  color: rgba(0, 0, 0, .5);
+  text-decoration: none;
+}
+.footer-col-3{
+  margin-top: 20px;
+  justify-content: flex-start;
+  gap: 20px;
+}
 }
