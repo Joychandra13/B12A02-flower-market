@@ -127,7 +127,31 @@ main{
   border: none;
 }
 
-
+/* Flower & Plants Lover section */
+.flower-and-plants{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 210.13px 0px 133.87px 0px;
+}
+.flower-and-plants-img{
+  position: relative;
+}
+.absolute-img {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+}
+.flower-and-plants-text h1{
+  margin-bottom: 20px;
+}
+.flower-and-plants-text ul{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
+}
 
 /* responsive-design-for-md-device */
 @media screen and (min-width: 576px) and (max-width:1180px) {
@@ -140,6 +164,18 @@ main{
   main{
     padding: 0px 20px;
   }
+  .flower-and-plants{
+    flex-direction: column;
+    gap: 18px;
+    margin: 41.5px 0px 143px 0px;
+  }
+  .flower-store-img{
+    width: 100%;
+  }
+  .absolute-img {
+    display: none;
+  }
+
 }
 
 /* responsive-design-for-sm-device */
@@ -193,5 +229,17 @@ main{
     font-size: 1rem;
   }
   
+  /* Flower & Plants Lover section */
+  .flower-and-plants{
+    flex-direction: column;
+    gap: 18px;
+    margin: 41.5px 0px 143px 0px;
+  }
+  .flower-store-img{
+    width: 100%;
+  }
+  .absolute-img {
+    display: none;
+  }
 
 }
