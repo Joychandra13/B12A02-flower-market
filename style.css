@@ -230,6 +230,47 @@ main{
   color: white;
 }
 
+/* Join section */
+.join{
+  background-image: url('assets/news-letter-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 195.5px 305px;
+  display: flex;
+  justify-content: center;
+  margin-top: 112px;
+}
+.join-content{
+  max-width: 830px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+form{
+  display: flex;
+}
+
+input[type="email"]{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .5);
+    border: none;
+    padding: 15.5px 348px 15.5px 20px;
+
+}
+button[type="submit"]{
+    margin-left: -5px;
+    background-color: #E95A08;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 15.5px 53.5px;
+}
+
 /* responsive-design-for-md-device */
 @media screen and (min-width: 576px) and (max-width:1180px) {
   .navbar{
@@ -343,6 +384,18 @@ main{
   }
   .right-card .card-content a {
     font-size: 1rem;
+  }
+
+  /* join */
+  .join{
+    padding: 110.5px 36px 64.5px 36px;
+    margin-top: 44.5px;
+  }
+  input[type="email"]{
+    padding: 15.5px 15px 15.5px 20px;
+  }
+  button[type="submit"]{
+    padding: 15.5px 12px;
   }
 
 }
