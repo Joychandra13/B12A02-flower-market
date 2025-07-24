@@ -322,6 +322,20 @@ button[type="submit"]{
   main{
     padding: 0px 20px;
   }
+  .banner{
+    position: relative;
+    margin: 28px 0px 65px 0px;
+  }
+  .banner-col-text{
+    width: 70%;
+    margin: 30px 16px 0px 16px;
+  }
+  .banner-col-text h1{
+    font-size: 2.5rem;
+  }
+  .banner-col-img img{
+    width: 100%;   
+  }
   .flower-and-plants{
     flex-direction: column;
     gap: 18px;
